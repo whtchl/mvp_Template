@@ -27,3 +27,7 @@ szx2（znpos，pad）是activity和presenter组成
 结构
 
 <img src="https://raw.githubusercontent.com/whtchl/mvp_Template/master/art/1.png"/>
+
+======================================
+hardware（应为是不同厂家提供的demo）和 UI通讯是没有用到上面的框架。他们之间通讯是用的是broadcast。后期改为用eventbus
+ 
