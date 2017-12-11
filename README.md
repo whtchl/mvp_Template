@@ -32,3 +32,9 @@ szx2（znpos，pad）是activity和presenter组成
 
 hardware（应为是不同厂家提供的demo）和 UI通讯是没有用到上面的框架。他们之间通讯是用的是broadcast。后期改为用eventbus
  
+ 
+ ==================================
+该项目中，WrapperConverter 或WrapperConverterSzx jsonObject返回的内容扩展性不好。这里已经写死了只能用一种数据结构SzxTransResponse 来处理所以的接口返回的数据。 如果要通用的，请查看Fishing-master(1).rar 下的WrapperConverter.java, 然后根据具体的项目来协商返回的数据接口。
+-- Fishing-master(1).rar 下的WrapperConverter.java中返回的json 一定要有STATUS（返回的数据状态），INFO（返回的message），DATA（设置一个json字符串，每个接口自己定义class来接受这个DATA）
+ 
+ 
